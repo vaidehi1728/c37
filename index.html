@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+  
+
+</body></html>
+
+
+<!-- 
+/*var trex_running,trex_collided,trex;
+var ground,invisibleGround,groundImg;
+var cloud,cloudimg,cloudGroup,spawnClouds;
+var Obstacles,Obstacles1,Obstacles2,Obstacles3,Obstacles4,
+    Obstacles5,Obstacles,spawnObstacles,ObstaclesGroup;
+var score=0;
+
+function preload(){
+
+  trex_running=loadAnimation("images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg",
+"images/6.jpg","images/7.jpg","images/8.jpg","images/9.jpg","images/10.jpg","images/11.jpg","images/12.jpg");
+trex_collided=loadImage("images/1.jpg");
+
+// trex_running=loadAnimation("trex1.png","trex3.png","trex4.png");
+// trex_collided=loadImage("trex_collided.png");
+  
+Obstacles1 = loadImage("images/obstacle1.png");
+Obstacles2 = loadImage("images/obstacle2.png");
+Obstacles3 = loadImage("images/obstacle3.png");
+Obstacles4 = loadImage("images/obstacle4.png");
+Obstacles5 = loadImage("images/obstacle5.png");
+Obstacles6 = loadImage("images/obstacle6.png");
+  
+groundImg=loadImage("images/ground2.png");
+  
+cloudimg=loadImage("images/cloud.png");
+}
+function setup() {
+  createCanvas(1300, 400);
+ trex=createSprite(50,380,20,50); 
+ trex.addAnimation("running",trex_running);
+ trex.scale=2;
+ 
+  ground=createSprite(200,380,400,20);
+  ground.addImage("ground",groundImg);
+  ground.x = ground.width/2;
+  ground.velocityX=-5;
+    invisibleGround=createSprite(200,390,400,10);
+  invisibleGround.visible=false;
+  
+  cloudsGroup = new Group ();
+  ObstaclesGroup = new Group ();
+}
+
+function draw() {
+  background(242, 246, 249);
+
+  textSize(18);
+  textFont("Georgia");
+  textStyle(BOLD);
+   
+  text("score:-"+score,350,50);
+  score = score+Math.round(getFrameRate()/60);
+  
+  if(keyDown("space")&&trex.y>161){
+     trex.velocityY=-12;
+ }
+  console.log(trex.y);
+  
+  trex.velocityY= trex.velocityY+0.8;
+  
+  if(ground.x<0){
+  ground.x=ground.width/2;
+
+  }
+    spawnClouds();
+    spawnObstacles();
+  
+  trex.collide(invisibleGround);
+  drawSprites();
+}
+
+function spawnClouds (){
+  if(frameCount % 60 === 0){
+   cloud = createSprite(600,120,40,10);
+    cloud.y = Math.round(random(20,140));
+   cloud.addImage(cloudimg);
+    cloud.scale = 0.5;
+   cloud.velocityX = -7;
+    cloud.lifetime = 200;
+    cloud.depth = trex.depth;
+    trex.depth = trex.depth + 1;
+    cloudsGroup.add(cloud);
+}
+}
+
+function spawnObstacles(){
+  if(frameCount % 60 === 0){
+    Obstacles = createSprite(600,360,10,40);
+    Obstacles.velocityX = -6;
+    
+    //random Obstacles 
+   var rand = Math.round(random(1,6));
+   switch(rand){
+     case 1: Obstacles .addImage(Obstacles1);
+      break; 
+      case 2: Obstacles .addImage(Obstacles1);
+      break; 
+      case 3: Obstacles .addImage(Obstacles1);
+      break; 
+      case 4: Obstacles .addImage(Obstacles1);
+      break; 
+      case 5: Obstacles .addImage(Obstacles1);
+      break; 
+      case 6: Obstacles .addImage(Obstacles1);
+      break;
+      default:break;
+      
+   }
+  Obstacles.scale=1;
+  Obstacles.lifetime =100;
+  }
+}
+
+
+*/ -->
